@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=Liu+Jian+Mao+Cao&family=Lustria&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "Abhaya Libre", serif;
+    font-size: 24px;
+    line-height: 16px;
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: #F2CDFF;
+    padding: 20px;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) ;
+}
+
+header .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+header .logo a{
+    text-decoration: none;
+}
+
+header .logo a:visited{
+    color: #000;
+}
+
+header .logo .first{
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+}
+
+header .logo .last{
+    font-family: "Abhaya Libre", serif;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 60px;
+}
+
+nav ul li:hover{
+    font-weight: bold;
+    text-shadow: 0px 2px 2px  #AA87B5;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:visited{
+    color: #000;
+} */
+
+#contact{
+    padding-right: 90px;
+}
+
+
+.tag-line {
+    border: 1px solid #FFF;
+    background: linear-gradient(90deg, #DAADE8 0%, #AA87B5 40%, #AF96B8 80%);
+    padding: 20px; 
+    position: relative;
+    overflow: hidden;
+}
+
+main .tag-line span{
+    color: #FFF;
+    font-size: 18px;
+    width: 100%;
+    letter-spacing: 3.84px;
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    /* animation: text-move 10s linear infinite; */
+}
+
+/* @keyframes text-move {
+    0%{
+        left:100%;
+    }
+
+    100%{
+        left:-100%;
+    }
+} */
+
+
+p{
+    font-family: "Abhaya Libre SemiBold", serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+main .main-part{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    padding-bottom: 53px;
+}
+
+
+.brand{
+    padding-top: 5px;
+}
+
+.brand form{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.check{
+    display: flex;
+    padding-top:20px;
+    padding-left: 50px;
+
+}
+
+#check1{
+    padding-left: 0;
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+}
+
+label{
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.category{
+    padding-top: 70px;
+}
+
+.category p{
+    padding-bottom: 20px;
+
+}
+
+
+.links{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.links a{
+    position: relative;
+}
+
+.links img{
+    border-radius: 10px;
+}
+
+.links img:hover{
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.25);
+    /* border-radius: 10px; */
+    /* border: 0.8px solid #000; */
+    transform: translateY(-2%);
+}
+
+
+.name{
+    color: white;
+    font-size: 30px;
+    padding: 0;
+    text-decoration: none;
+    position: absolute;
+    top: 47%;
+    left: 24%;
+}
+
+
+#name2{
+    top: 47%;
+    left: 27%;
+}
+
+
+#name3{
+    top: 47%;
+    left: 23%;
+}
+
+#name5{
+    top: 47%;
+    left: 11%;
+}
+
+section a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+section a:hover{
+    text-shadow: 0px 2px 2px  #AA87B5;
+    text-decoration: none;
+}
+
+
+section a:visited{
+    color: #000;
+}
+
+footer{
+    background-color: #F2CDFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+
+footer p{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+
+footer p a{
+    text-decoration: none;
+    padding-right: 20px;
+
+}
+
+footer p a:hover{
+    text-shadow: 0px 2px 2px  #AA87B5;
+    text-decoration: none;
+}
+
+footer p a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Other web pages */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F2CDFF;
+    background: linear-gradient(180deg, #FBEFFF 0%, #F5DFFC 50%, #EDD4F5 75%, #F2CDFF 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.heading-text{
+    text-align: center;
+    width: 70%;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.main-part-new{
+    display: flex;
+    justify-content: center;
+    padding: 100px 50px;
+}
+
+#mac_sec, #loreal_sec{
+    border-right: 2px solid #F2CDFF;
+}
+
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.brand_image{
+    text-align: center;
+}
+
+
+.text img{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height:48px;
+
+}
+
+
+.text-content{
+    padding-top: 70px;
+}
+
+
+.text-content div{
+    line-height: 25px;
+    padding: 15px;
+}
+
+.heading-img img{
+    width: 450px;
+    height: 250px;
+}
+
+
+
+#mac_sec,#loreal_sec,#maybelline_sec{
+    display: none;
+}
+

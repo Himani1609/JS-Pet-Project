@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Foundation</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <div class="logo">
+                    <div class="first"><a href="./index.html">glam</a></div>
+                    <div class="last"><a href="./index.html">Guide</a></div>
+                </div>
+                <!-- <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li>About</li>
+                        <li>Account</li>
+                        <li id="contact">Contact</li>
+                    </ul>
+                </nav> -->
+        </header>
+
+        <main>
+            <section>
+                <div class="banner">
+                    <div class="heading-img"><img src="./images/swatch.jpg" alt="Image of Foundation"></div>
+                    <div class="heading-text"> Foundation </div>
+                </div>
+                <div class="tag-line">
+                    <span>Uncover Your Perfect Match: Dive into the Details and Find the Beauty That Fits You Best!</span> 
+                </div>
+                <div class="main-part-new">
+                    <div class="text" id="mac_sec">
+                        <div class="brand_image"><img src="./images/mac.png" alt="MAC"></div>
+                        <div class="text-content">
+                            <div><strong>Price:</strong> $40 - $45</div>
+                            <div><strong>Ingredients:</strong> Water-based formula with dimethicone, talc, iron oxides, and SPF 15 for sun protection.</div>
+                            <div><strong>Expiry Date:</strong> 12-18 months after opening.</div>
+                            <div><strong>Application:</strong> Available in liquid, powder, and cream formulas; offers buildable medium-to-full coverage with a natural matte finish.</div>
+                            <div><strong>Benefits:</strong> Long-lasting, oil-controlling, wide range of shades for various undertones, and sweat-resistant.</div>
+                            <div><strong>Potential Risks:</strong> May contain silicones and preservatives that could irritate sensitive or acne-prone skin.</div>
+                        </div>
+                    </div>
+                    <div class="text" id="loreal_sec">
+                        <div class="brand_image"><img src="./images/loreal.png" alt="Loreal"></div>
+                        <div class="text-content">
+                            <div><strong>Price:</strong> $12 - $16</div>
+                            <div><strong>Ingredients:</strong> Water-based with alcohol denat, dimethicone, and pigments for long wear. Often contains SPF.</div>
+                            <div><strong>Expiry Date:</strong> 12 months after opening.</div>
+                            <div><strong>Application:</strong> Lightweight formula that blends easily with a natural matte or radiant finish, depending on the line.</div>
+                            <div><strong>Benefits:</strong> Affordable, transfer-proof, long-lasting (up to 24 hours), and available in many shades.</div>
+                            <div><strong>Potential Risks:</strong> Contains alcohol, which may be drying for some skin types.</div>
+                        </div>
+                    </div>
+                    <div class="text" id="maybelline_sec">
+                        <div class="brand_image"><img src="./images/maybelline.png" alt="Maybelline New York"></div>
+                        <div class="text-content">
+                            <div><strong>Price:</strong> $7 - $10</div>
+                            <div><strong>Ingredients:</strong> Dimethicone, talc, and iron oxides for smooth coverage and oil absorption.</div>
+                            <div><strong>Expiry Date:</strong> 12-18 months after opening.</div>
+                            <div><strong>Application:</strong> Blends seamlessly, offering buildable medium coverage; available in both matte and dewy finishes.</div>
+                            <div><strong>Benefits:</strong> Budget-friendly, pore-minimizing, and available in over 40 shades. Ideal for oily or combination skin.</div>
+                            <div><strong>Potential Risks:</strong> Some users with dry skin may find the matte formula too drying unless well-moisturized beforehand.</div>
+                        </div>
+                    </div>
+
+            </section> 
+            <section>
+                <a href="./index.html">Go Back to Home Page</a>
+            </section>    
+        </main>
+
+        <footer>
+                <p>&copy; Copyright Himani, 2024.</p>
+                <p><a href="./Foundation.html">Top of the Page</a></p>
+        </footer>
+
+    </div>
+
+    <!-- <script>
+    
+        window.onload = function () {
+    
+                // Extracting the array ("get") from local storage
+                var selectedBrands = JSON.parse(localStorage.getItem("selectedBrands"));
+    
+                // Catching the divs we want to modify by id
+                var mac_div = document.getElementById("mac_sec");
+                var loreal_div = document.getElementById("loreal_sec");
+                var maybelline_div = document.getElementById("maybelline_sec");
+
+                // using form method ".includes()" to check if we checked on that brand or not because that will show as value in the array
+                if (selectedBrands.includes("mac")) {
+                mac_div.style.display = "block";
+                
+
+                if(selectedBrands.includes("loreal") && selectedBrands.includes("maybelline")){
+                    loreal_div.style.borderRight = "2px solid #F2CDFF;";
+                }
+                else if(selectedBrands.includes("loreal") || selectedBrands.includes("maybelline")){
+                    loreal_div.style.borderRight = "none";  
+
+                }
+                else{
+                    mac_div.style.borderRight = "none";  
+
+                }
+                        
+    
+                }
+    
+    
+                if (selectedBrands.includes("loreal")) {
+                    loreal_div.style.display = "block";
+    
+                    if(selectedBrands.includes("mac") || selectedBrands.includes("maybelline")){
+                        mac_div.style.borderRight = "2px solid #F2CDFF;";
+                        loreal_div.style.borderRight = "2px solid #F2CDFF;";
+    
+                    }else{
+                        mac_div.style.borderRight = "none";
+                        loreal_div.style.borderRight = "none";
+                    }
+                }
+    
+    
+                if (selectedBrands.includes("maybelline")) {
+                    maybelline_div.style.display = "block";
+    
+                    if(selectedBrands.includes("mac") | selectedBrands.includes("loreal")){
+                        mac_div.style.borderRight = "border-right: 2px solid #F2CDFF;";
+                        loreal_div.style.borderRight = "border-right: 2px solid #F2CDFF;";
+    
+                    }else{
+                        mac_div.style.borderRight = "none";
+                        loreal_div.style.borderRight = "none";
+                    }
+                }
+        };
+    
+    </script> -->
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Eyeliner</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <div class="logo">
+                    <div class="first"><a href="./index.html">glam</a></div>
+                    <div class="last"><a href="./index.html">Guide</a></div>
+                </div>
+                <!-- <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li>About</li>
+                        <li>Account</li>
+                        <li id="contact">Contact</li>
+                    </ul>
+                </nav> -->
+        </header>
+
+        <main>
+            <section>
+                <div class="banner">
+                    <div class="heading-img"><img src="./images/Eyes.png" alt="Image of Eyes"></div>
+                    <div class="heading-text"> Eyeliner </div>
+                </div>
+                <div class="tag-line">
+                    <span>Uncover Your Perfect Match: Dive into the Details and Find the Beauty That Fits You Best!</span> 
+                </div>
+                <div class="main-part-new">
+                    <div class="text" id="mac_sec">
+                        <div class="brand_image"><img src="./images/mac.png" alt="MAC"></div>
+                        <div class="text-content">
+                            <div><strong>Price:</strong> $22 - $25</div>
+                            <div><strong>Ingredients:</strong> Includes waxes (like beeswax), silicones for smooth application, and iron oxides for pigmentation.</div>
+                            <div><strong>Expiry Date:</strong> 6-12 months after opening (liquid/gel) and up to 24 months (pencil).</div>
+                            <div><strong>Application:</strong> Offers a variety of forms, including pencil, liquid, and gel; known for smooth, precise application and smudge-proof formulas.</div>
+                            <div><strong>Benefits:</strong>  Long-lasting, richly pigmented, available in various finishes (matte, shimmer). MAC's Pro Longwear Fluidline is a standout for gel liner enthusiasts.</div>
+                            <div><strong>Potential Risks:</strong> Some products may contain synthetic dyes and preservatives that can irritate sensitive eyes.</div>
+                        </div>
+                    </div>
+                    <div class="text" id="loreal_sec">
+                        <div class="brand_image"><img src="./images/loreal.png" alt="Loreal"></div>
+                        <div class="text-content">
+                            <div><strong>Price:</strong> $8 - $12</div>
+                            <div><strong>Ingredients:</strong> Formulas often include waxes, synthetic polymers for long wear, and pigments like iron oxides.</div>
+                            <div><strong>Expiry Date:</strong> 6-12 months after opening.</div>
+                            <div><strong>Application:</strong> Smooth, glide-on pencils and precision liquid tips for easy application. Long-wear and waterproof options are common.</div>
+                            <div><strong>Benefits:</strong> Affordable, smudge-proof, waterproof formulas, ideal for long-lasting wear.</div>
+                            <div><strong>Potential Risks:</strong> Potential irritation from preservatives or synthetic dyes in sensitive eyes.</div>
+                        </div>
+                    </div>
+                    <div class="text" id="maybelline_sec">
+                        <div class="brand_image"><img src="./images/maybelline.png" alt="Maybelline New York"></div>
+                        <div class="text-content">
+                            <div><strong>Price:</strong> $6 - $10</div>
+                            <div><strong>Ingredients:</strong> Water-based formulas for liquid liners, silicone, and pigments for long wear and smooth application.</div>
+                            <div><strong>Expiry Date:</strong> 6-12 months after opening.</div>
+                            <div><strong>Application:</strong> Features flexible brush tips for precision; easy glide for both beginners and pros. Known for bold, intense pigmentation.</div>
+                            <div><strong>Benefits:</strong> Budget-friendly, waterproof, smudge-resistant, ideal for all-day wear.</div>
+                            <div><strong>Potential Risks:</strong> Liquid formulas can sometimes flake or irritate sensitive skin around the eyes.</div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <section>
+                <a href="./index.html">Go Back to Home Page</a>
+            </section>  
+        </main>
+
+
+        <footer>
+                <p>&copy; Copyright Himani, 2024.</p>
+                <p><a href="./Eyeliner.html">Top of the Page</a></p>
+        </footer>
+
+    </div>
+
+    <!-- <script>
+    
+        window.onload = function () {
+    
+                // Extracting the array ("get") from local storage
+                var selectedBrands = JSON.parse(localStorage.getItem("selectedBrands"));
+    
+                // Catching the divs we want to modify by id
+                var mac_div = document.getElementById("mac_sec");
+                var loreal_div = document.getElementById("loreal_sec");
+                var maybelline_div = document.getElementById("maybelline_sec");
+        
+                // using form method ".includes()" to check if we checked on that brand or not because that will show as value in the array
+                if (selectedBrands.includes("mac")) {
+                mac_div.style.display = "block";
+                
+
+                if(selectedBrands.includes("loreal") && selectedBrands.includes("maybelline")){
+                    loreal_div.style.borderRight = "2px solid #F2CDFF;";
+                }
+                else if(selectedBrands.includes("loreal") | selectedBrands.includes("maybelline")){
+                    loreal_div.style.borderRight = "none";  
+
+                }
+                else{
+                    mac_div.style.borderRight = "none";  
+
+                }
+                        
+    
+                }
+    
+    
+                if (selectedBrands.includes("loreal")) {
+                    loreal_div.style.display = "block";
+    
+                    if(selectedBrands.includes("mac") || selectedBrands.includes("maybelline")){
+                        mac_div.style.borderRight = "2px solid #F2CDFF;";
+                        loreal_div.style.borderRight = "2px solid #F2CDFF;";
+    
+                    }else{
+                        mac_div.style.borderRight = "none";
+                        loreal_div.style.borderRight = "none";
+                    }
+                }
+    
+    
+                if (selectedBrands.includes("maybelline")) {
+                    maybelline_div.style.display = "block";
+    
+                    if(selectedBrands.includes("mac") || selectedBrands.includes("loreal")){
+                        mac_div.style.borderRight = "2px solid #F2CDFF;";
+                        loreal_div.style.borderRight = "2px solid #F2CDFF;";
+    
+                    }else{
+                        mac_div.style.borderRight = "none";
+                        loreal_div.style.borderRight = "none";
+                    }
+                }
+        };
+    
+    </script> -->
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
